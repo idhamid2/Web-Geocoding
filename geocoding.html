@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geocoding Web Application</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- geosearch - leaflet Map Plugin -->
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@3.5.0/dist/geosearch.css" />
+    <script src="https://unpkg.com/leaflet-geosearch@3.5.0/dist/geosearch.umd.js"></script>
+
+    <!-- j-Query Lib -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/home.css" />
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="headingDiv">
+            <img src="img/Coordinates_logo.jpg" class="headerLogo">
+            <img src="img/download.jfif" class="headerLogo1">
+            <h1>Geocoding Dashboard</h1>
+        </div>
+
+        <div class="showContainer">
+
+            <div class="inputContainer">
+
+                <label class="coordinatesInput">
+                    <strong>Latitude:</strong>
+                    <input type="number" id="latitude" />
+                </label>
+
+                <label class="coordinatesInput">
+                    <strong>Longitude:</strong>
+                    <input type="number" id="longitude" />
+                </label>
+                <br>
+                <button type="button" class="btn btn-primary" onclick="getInputValue()">Submit</button>
+
+            </div>
+
+            <div class="detailContainer">
+
+                <p id="coordinatesDeatilHeading" class="hide"><strong> The deatils of the enterted coordinates are
+                        in the following table</strong></p>
+                <p id="addressDeatilHeading" class="hide"><strong> The deatils of the searched location on
+                        the Map are in the following table</strong></p>
+                <div id="tableDiv" class="hide">
+                    <table id="tbl">
+                        <thead>
+                            <tr>
+                                <th>Property Name</th>
+                                <th>Property Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mapContainer">
+            <div id="map" class="map">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/geocoding.js"></script>
+
+</html>

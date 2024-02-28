@@ -1,0 +1,128 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.mainDiv {
+    height: 100%;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+
+.headingDiv {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(167, 165, 238);
+    float: left;
+    padding: 0%;
+    margin: 0%;
+}
+
+.showContainer {
+    height: 90%;
+    width: 30%;
+    color: black;
+    background-color: rgb(6, 6, 5);
+    float: left;
+}
+
+.inputContainer {
+    height: 30%;
+    width: 100%;
+    color: black;
+    background-color: rgb(188, 181, 181);
+    float: left;
+}
+
+.detailContainer {
+    height: 70%;
+    width: 100%;
+    color: black;
+    background-color: rgb(188, 181, 181);
+    float: right;
+}
+
+
+.mapContainer {
+    height: 90%;
+    width: 70%;
+    color: black;
+    background-color: cyan;
+    float: right;
+}
+
+.map {
+    position: absolute;
+    height: 90%;
+    width: 70%;
+}
+
+.headingDiv h1 {
+    text-align: center;
+
+}
+
+.headerLogo {
+    height: 100%;
+    width: 8%;
+    float: left;
+}
+
+.headerLogo1 {
+    height: 100%;
+    width: 8%;
+    float: right;
+}
+
+.coordinatesInput {
+    margin: 3%;
+
+}
+
+.coordinatesInput input {
+    margin-left: 1%;
+}
+
+.inputContainer button {
+    margin: 5%;
+    width: 35%;
+}
+
+#tableDiv {
+    position: absolute;
+    left: 0px;
+    width: 30%;
+    padding: 1%;
+    justify-content: center;
+}
+
+table,
+td {
+    /*border-collapse: collapse;*/
+    border: 2px solid black;
+
+
+}
+
+th {
+    background-color: #d1d1d0;
+    border: 2px solid black;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: initial;
+}
+
+.detailContainerDescrip {
+    margin-left: 3%;
+}
